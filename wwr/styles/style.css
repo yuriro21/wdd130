@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Satisfy&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -9,14 +11,36 @@ nav a, #hero-msg h1, #hero-msg h4,
     color: black;
 }
 
+nav a{
+    padding: 35px;
+}
+ 
 #background {
     height: 725px;
 }
 body{
     background-color: whitesmoke;
+    font-family: Fira Sans;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
-header{
+
+header {
     background-color: whitesmoke;
+    font-family: satisfy;
+}
+.home-title{
+    font-size: 2em;
+}
+
+h1{
+    font-family: satisfy;
+}
+
+h2{
+    font-family: satisfy;
+    margin: 0;
 }
 
 .book, .join, nav a, footer a{
@@ -24,6 +48,11 @@ header{
     color: black;
     text-align: center;
     text-decoration: none;
+}
+.book, .join{
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover, nav a:hover,footer a:hover{
@@ -36,6 +65,15 @@ header{
 }
 .msg{
     background-color: #00ADEF;
+
+}
+
+footer{
+    padding: 25px 50px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 footer, footer a{
@@ -58,10 +96,36 @@ footer p a:hover{
     color: black;
 }
 
+.msg{
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    font-size: 2em; 
+    padding: 35px;
+}
+
+.icon{
+    padding-top: 10px;
+}
+
 .logo, .icon{
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 #hero-img {
     width: 100%;
+}
+
+.card-img {
+    border: 10px solid #00ADEF;
+}
+
+main section img {
+    box-sizing: border-box;
 }

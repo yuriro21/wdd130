@@ -12,7 +12,7 @@ body{
 
 /*** Header***/
 header {
-    background-color: rgba(red, green, blue, alpha);
+    background-color: rgba(192, 192, 192, 0.2);
     font-family: satisfy;
     display: grid;
     grid-template-columns: 150px auto;

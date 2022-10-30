@@ -47,6 +47,7 @@ nav {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+    
 }
 
 #hero-msg h4, h1 {
@@ -92,7 +93,7 @@ nav {
 }
 
 #background {
-    background-color: ghostwhite;
+    background-color: white;
     height: 725px;
     grid-column: 1/11;
     grid-row: 4/9;
@@ -104,6 +105,7 @@ nav {
     border: 10px solid #00ADEF;
     width: 100%;
     box-shadow: 5px 5px 10px #6f7364;
+    z-index: 0;
 }
 
 .msg{
@@ -113,6 +115,11 @@ nav {
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
+    z-index: 1;
+}
+
+.msg p {
+    font-size: 0.9em; 
 }
 
 main section img {
@@ -128,6 +135,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    grid-column: 1/11;
+    grid-row: 10/11;
 }
 
 footer .social img {
@@ -199,15 +208,6 @@ h2{
 
 .home-title h4 {
     color: black;
-}
-
-.msg h2, .msg p{
-    color: black;
-}
-
-.msg p {
-    font-size: 2em; 
-    padding: 35px;
 }
 
 .icon{

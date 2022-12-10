@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veganbake</title>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="content">
@@ -36,10 +48,10 @@
                 </div>
             
                 <div class="container">
-                    <label for="uname"><b>Username</b></label>
+                    <label id="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
             
-                    <label for="psw"><b>Password</b></label>
+                    <label id="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
             
                     <button class="button_log" type="submit">Login</button>
@@ -58,19 +70,23 @@
             <section class="courses">
                 <h2>Courses</h2>
                 <img class="mon" src="images/mom.jpg" alt="Course people">
-                <h3>Vegan and integral pastry and bakery course.</h3>
-                <p>This course is designed for people who want to take care of their health with a natural and organic diet,
+                <h3 class="title3">Vegan and integral pastry and bakery course.</h3>
+                <p class="p_one">This course is designed for people who want to take care of their health with a natural and organic diet,
                     it also helps a lot in the diet of people with diabetes or gluten intolerance. Among the different things 
                     you will learn are the following:
-          
-                    -Different protein flours, such as chickpea flour, coconut, almond, oatmeal, buckwheat, rye.
-                    -Produce oils that are essential for good nutrition.
-                    -The use of natural sweeteners, such as powdered or liquid stevia
-                    -Different types of recipes and preparation of vegan and wholemeal meals and desserts.</p>
-                    <p>Contact information:
-                        Chef. Irene Ruiz
-                        Phone: +584147315669
-                        Tachira - Venezuela.</p>
+                </p>
+                <ul class="knowledge">
+                    <li>Different protein flours, such as chickpea flour, coconut, almond, oatmeal, buckwheat, rye.</li>
+                    <li>Produce oils that are essential for good nutrition.</li>
+                    <li>The use of natural sweeteners, such as powdered or liquid stevia</li>
+                    <li>Different types of recipes and preparation of vegan and wholemeal meals and desserts.</li>
+                </ul>
+                <pre class="p_two">
+                    Contact information:
+                    Chef. Irene Ruiz
+                    Phone: +584147315669
+                    Tachira - Venezuela.
+                </pre>
                     <img class="notes" src="images/notes.jpg" alt="Notes">
             </section>
 
@@ -89,15 +105,4 @@
         </main>
     </div>
 </body>
-<script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 </html>

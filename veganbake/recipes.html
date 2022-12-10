@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veganbake</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="content">
@@ -36,10 +47,10 @@
                 </div>
             
                 <div class="container">
-                    <label for="uname"><b>Username</b></label>
+                    <label id="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
             
-                    <label for="psw"><b>Password</b></label>
+                    <label id="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
             
                     <button class="button_log" type="submit">Login</button>
@@ -119,15 +130,4 @@
         </main>
     </div>
 </body>
-<script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 </html>

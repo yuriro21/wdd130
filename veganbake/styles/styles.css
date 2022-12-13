@@ -30,7 +30,7 @@ body{
 .second{
     grid-column: 2/4;
 }
-.third{                                           xxxx xxxxxxx       
+.third{ 
     grid-column: 1/4;
 }
 h2{
